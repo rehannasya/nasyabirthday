@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ulang Tahun Sudah Lewat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #1a0a1a;
+            --text: #f5e6f0;
+            --accent: #e8a0c8;
+            --gold: #f0c8a0;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .container {
+            animation: fadeIn 1.2s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .icon {
+            font-size: 64px;
+            margin-bottom: 20px;
+            animation: bounce 2s ease-in-out infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 36px;
+            color: var(--accent);
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 15px;
+            color: #b895a8;
+            line-height: 1.8;
+        }
+
+        .date {
+            font-weight: 600;
+            color: var(--gold);
+            font-size: 16px;
+            margin-top: 8px;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 11px;
+            color: rgba(232, 160, 200, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="icon">🎂</div>
+        <h1>Ngapain ke sini?</h1>
+        <p>
+            Ultah dia udah lewat.<br>
+            <span class="date">27 Juni 2026</span>
+        </p>
+        <p class="footer">Datang lagi tahun depan, ya.</p>
+    </div>
+
+</body>
+</html>
